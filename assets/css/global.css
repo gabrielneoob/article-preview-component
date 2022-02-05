@@ -5,6 +5,9 @@
   text-decoration: none;
   list-style: none;
 }
+html {
+  font-size: 13px;
+}
 
 img {
   width: 100%;

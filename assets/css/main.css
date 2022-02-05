@@ -1,0 +1,112 @@
+#container {
+  display: flex;
+  max-width: 800px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+#container:hover {
+  transform: scale(1.02);
+}
+
+.drawers-img {
+  width: 850px;
+}
+
+.drawers-img img {
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  object-fit: cover;
+  object-position: 0px;
+}
+
+.content {
+  background: #fff;
+  padding: 40px;
+  border-radius: 0 10px 10px 0;
+  display: grid;
+  gap: 20px;
+}
+
+.content h1 {
+  color: var(--very-dark-blue);
+  font-size: 1.9rem;
+}
+
+.content p {
+  color: var(--desaturated-blue);
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.perfil h3 {
+  font-size: 1rem;
+  color: var(--very-dark-blue);
+}
+
+.img-perfil {
+  max-width: 45px;
+}
+
+.img-perfil img {
+  border-radius: 50%;
+}
+
+.perfil h3::after {
+  content: "28 Jun 2020";
+  display: block;
+  text-align: start;
+  padding-top: 3px;
+  opacity: 50%;
+}
+
+.icon-share-img {
+  max-width: 50px;
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  background: var(--light-blue);
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.container-js {
+  background: var(--very-dark-blue);
+  display: none;
+  gap: 15px;
+  padding: 15px 35px;
+  border-radius: 10px;
+  align-items: center;
+  position: absolute;
+  right: -105px;
+  top: -78px;
+}
+
+.container-js::after {
+  content: "";
+  background: var(--very-dark-blue);
+  position: absolute;
+  bottom: -10px;
+  right: 110px;
+  transform: rotate(45deg);
+  height: 20px;
+  width: 20px;
+}
+
+.container-js span {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--grayish-blue);
+}
+
+.active {
+  display: flex;
+}

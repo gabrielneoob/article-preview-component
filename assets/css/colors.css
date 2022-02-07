@@ -8,5 +8,6 @@
   --light-blue: hsl(210, 46%, 95%);
 }
 
-.a {
+.bg-dark {
+  background: var(--very-dark-blue) !important;
 }
